@@ -1,0 +1,21 @@
+{
+    "name": "live-polling-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "esbuild src/index.js --bundle --loader:.js=jsx --outfile=public/bundle.js --minify",
+        "test": "cucumber-js --require ./test/steps/**/*.js ./test/features/**/*.feature"
+    },
+    "dependencies": {
+        "firebase": "10.12.2",
+        "qrcode.react": "3.1.0",
+        "react": "18.3.1",
+        "react-dom": "18.3.1",
+        "react-router-dom": "5.3.0"
+    },
+    "devDependencies": {
+        "@cucumber/cucumber": "10.8.0",
+        "@playwright/test": "1.44.1",
+        "esbuild": "0.21.4"
+    }
+}
